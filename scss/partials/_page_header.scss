@@ -1,0 +1,23 @@
+.header {
+    height: 100px;
+    background-color: $header-bcg-color;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        font-family: $logo-font-family;
+        font-weight: 400;
+        font-size: 40px;
+        color: white;
+    }
+
+    &__decor {
+        font-weight: 700;
+        color: $accent-color;
+    }
+}
