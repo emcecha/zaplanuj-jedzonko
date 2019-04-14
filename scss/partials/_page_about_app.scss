@@ -1,0 +1,26 @@
+.about-app {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+
+    &__col {
+        width: 30%;
+        text-align: center;
+        color: $aside-bcg-color;
+    }
+
+    &__icon {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 24px;
+    }
+}
