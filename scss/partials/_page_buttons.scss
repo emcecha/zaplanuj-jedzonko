@@ -1,0 +1,30 @@
+.button {
+    color: white;
+    background-color: $accent-color;
+    cursor: pointer;
+    padding: 15px 40px;
+    position: relative;
+    transition: all 200ms;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        background-color: $accent-color;
+        transition: all 200ms;
+        transition-delay: 100ms;
+    }
+
+    &:hover {
+        color: $accent-color;
+        background-color: white;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}

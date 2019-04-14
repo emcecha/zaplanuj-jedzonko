@@ -1,0 +1,26 @@
+.cta {
+    background-color: $header-bcg-color;
+    height: 250px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__content {
+        padding-right: 75px;
+        color: white;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 24px;
+    }
+}
