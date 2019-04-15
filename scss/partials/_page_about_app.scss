@@ -1,7 +1,7 @@
 .about-app {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 60px 0;
 
     &__col {
         width: 30%;
@@ -15,12 +15,12 @@
     }
 
     &__title {
-        font-size: 32px;
+        font-size: $xl-font-size;
         font-weight: 400;
         margin-bottom: 20px;
     }
 
     &__text {
-        font-size: 24px;
+        font-size: $l-font-size;
     }
 }

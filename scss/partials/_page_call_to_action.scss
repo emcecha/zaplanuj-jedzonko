@@ -1,12 +1,11 @@
 .cta {
     background-color: $header-bcg-color;
-    height: 250px;
+    padding: 60px 0;
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
 
     &__content {
@@ -15,12 +14,12 @@
     }
 
     &__title {
-        font-size: 36px;
+        font-size: $xl-font-size;
         font-weight: 400;
         margin-bottom: 30px;
     }
 
     &__text {
-        font-size: 24px;
+        font-size: $l-font-size;
     }
 }

@@ -1,18 +1,17 @@
 .news {
     background-color: $header-bcg-color;
-    height: 150px;
+    padding: 60px 0;
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
 
     &__text {
         color: white;
         font-weight: 400;
-        font-size: 36px;
+        font-size: $xl-font-size;
         padding-right: 20px;
     }
 
@@ -24,11 +23,6 @@
         border: none;
         padding: 0 10px;
         width: 250px;
-        font-size: $regular-font-size;
-    }
-
-    .button {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: $s-font-size;
     }
 }

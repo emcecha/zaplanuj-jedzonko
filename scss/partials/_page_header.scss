@@ -1,5 +1,5 @@
 .header {
-    height: 100px;
+    padding: 10px 0 5px;
     background-color: $header-bcg-color;
 
     &__container {
@@ -12,7 +12,7 @@
     &__link {
         font-family: $logo-font-family;
         font-weight: 400;
-        font-size: 40px;
+        font-size: $xxl-font-size;
         color: white;
     }
 

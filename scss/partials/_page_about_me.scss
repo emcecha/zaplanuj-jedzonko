@@ -1,27 +1,29 @@
 .about-me {
     display: flex;
+    align-items: flex-start;
+    padding: 60px;
 
     &__frame {
         width: 35%;
-        border: 2px solid $screen-bcg-color;
     }
 
     &__img {
         width: 100%;
+        display: block;
     }
 
     &__description {
         width: 65%;
-        padding: 50px;
+        padding-left: 50px;
     }
 
     &__title {
-        font-size: 36px;
+        font-size: $xl-font-size;
         font-weight: 400;
         margin-bottom: 30px;
     }
 
     &__text {
-        font-size: 24px;
+        font-size: $l-font-size;
     }
 }
