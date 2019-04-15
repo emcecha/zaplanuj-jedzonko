@@ -1,0 +1,27 @@
+.about-me {
+    display: flex;
+
+    &__frame {
+        width: 35%;
+        border: 2px solid $screen-bcg-color;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__description {
+        width: 65%;
+        padding: 50px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 24px;
+    }
+}
