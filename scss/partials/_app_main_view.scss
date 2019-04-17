@@ -1,0 +1,96 @@
+.app-header {
+    height: 80px;
+    padding: 0 20px;
+    background-color: $header-bcg-color;
+    border-bottom: 1px solid $app-head-brd-color;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        font-family: $logo-font-family;
+        font-weight: 400;
+        font-size: $xl-font-size;
+    }
+
+    &__logo-accent {
+        color: $accent-color;
+        font-weight: 700;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: $l-font-size;
+    }
+
+    &__photo {
+        height: 50px;
+        width: 50px;
+        margin: 0 20px;
+    }
+}
+
+.app-flex-container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.app-nav {
+    width: 235px;
+    background-color: $aside-bcg-color;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        font-size: $l-font-size;
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+
+        &.clicked::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 5px;
+            top: 0;
+            left: 0;
+            background-color: $accent-color;
+        }
+
+        i {
+            color: transparent;
+            font-size: $s-font-size;
+        }
+
+        &.clicked i {
+            color: $accent-color;
+        }
+
+        &:hover .app-nav__link {
+            color: $accent-color;
+        }
+    }
+
+    &__link {
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: color 200ms;
+    }
+}
+
+.app-main {
+    background-image: url("../img/app_background.png");
+    width: calc(100% - 235px);
+    padding: 30px 50px;
+}
