@@ -28,19 +28,19 @@
 
         <nav class="app-nav">
             <ul class="app-nav__list">
-                <li id="dashboard"class="app-nav__item clicked">
+                <li class="app-nav__item clicked">
                     <a href="app.html" class="app-nav__link">
                         Pulpit
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </li>
-                <li id="recipes" class="app-nav__item">
+                <li class="app-nav__item">
                     <a href="recipes.html" class="app-nav__link">
                         Przepisy
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </li>
-                <li id="schedules" class="app-nav__item">
+                <li class="app-nav__item">
                     <a href="schedules.html" class="app-nav__link">
                         Plany
                         <i class="fas fa-chevron-right"></i>
@@ -57,9 +57,9 @@
                     wygląda na to, że jesteś tutaj<br>
                     pierwszy raz!
                 </p>
-                <form class="app-welcome__form" action="index.html" method="post">
-                    <input type="text" name="name" class="app-welcome__input" placeholder="tutaj wpisz jak masz na imię">
-                    <button type="button" name="button" class="button">
+                <form class="app-welcome__form">
+                    <input type="text" name="name" required class="app-welcome__input" placeholder="tutaj wpisz jak masz na imię">
+                    <button type="submit" class="button" id="user-submit">
                         Gotowe!
                     </button>
                 </form>
