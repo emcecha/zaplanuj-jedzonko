@@ -1,0 +1,35 @@
+.app-dashboard {
+
+    &__menu {
+        display: flex;
+    }
+
+    &__button {
+        background-color: $screen-bcg-color;
+        border: 1px dashed $msg-sucs-color;
+        color: $msg-sucs-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: all 200ms;
+
+        i {
+            font-size: 60px;
+        }
+
+        &:hover {
+            color: $accent-color;
+            border-color: $accent-color;
+        }
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-size: $m-font-size;
+    }
+}
