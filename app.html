@@ -72,13 +72,13 @@
             <div class="app-dashboard">
 
                 <div class="app-dashboard__menu">
-                    <div class="app-dashboard__button">
+                    <div class="app-dashboard__button" id="add-recipe">
                         <i class="far fa-plus-square"></i>
                         <p class="app-dashboard__description">
                             dodaj przepis
                         </p>
                     </div>
-                    <div class="app-dashboard__button">
+                    <div class="app-dashboard__button" id="add-plan">
                         <i class="far fa-plus-square"></i>
                         <p class="app-dashboard__description">
                             dodaj plan
@@ -268,6 +268,80 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="app-add-recipe">
+                <div class="app-add-recipe__header">
+                    <h2 class="app-add-recipe__title">
+                        NOWY PRZEPIS
+                    </h2>
+                    <div class="button" id="save-recipe">
+                        Zapisz i zamknij
+                    </div>
+                </div>
+                <form class="app-add-recipe__form">
+                    <div class="app-add-recipe__field">
+                        <label for="recipe-name" class="app-add-recipe__label">
+                            Nazwa przepisu
+                        </label>
+                        <input type="text" name="recipe-name" class="app-add-recipe__input">
+                    </div>
+                    <div class="app-add-recipe__field">
+                        <label for="recipe-description" class="app-add-recipe__label">
+                            Opis przepisu
+                        </label>
+                        <textarea name="recipe-description" rows="3" class="app-add-recipe__input"></textarea>
+                    </div>
+                </form>
+                <div class="app-add-recipe__details">
+                    <div class="app-add-recipe__col">
+                        <h3 class="app-add-recipe__col-title">
+                            INSTRUKCJE
+                        </h3>
+                        <div class="app-add-recipe__col-form">
+                            <textarea name="instructions" rows="3" class="app-add-recipe__input-details"></textarea>
+                            <div class="app-add-recipe__button">
+                                <i class="fas fa-plus-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-add-recipe__col">
+                        <h3 class="app-add-recipe__col-title">
+                            SKŁADNIKI
+                        </h3>
+                        <div class="app-add-recipe__col-form">
+                            <input type="text" name="ingridients" class="app-add-recipe__input-details">
+                            <div class="app-add-recipe__button">
+                                <i class="fas fa-plus-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-add-recipe__list-box">
+                        <ol class="app-add-recipe__list app-add-recipe__list--instructions">
+                            <li>tralala
+                                <i class="fas fa-edit"></i>
+                                <i class="far fa-trash-alt"></i>
+                            </li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                            <li>tralala</li>
+                        </ol>
+                    </div>
+                    <div class="app-add-recipe__list-box">
+                        <ul class="app-add-recipe__list app-add-recipe__list--ingridients">
+                            <li>a</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </main>

@@ -1,11 +1,16 @@
 html,
 input,
+textarea,
 button {
     font-family: $text-font-family;
 }
 
 body {
   background-color: $screen-bcg-color;
+}
+
+textarea {
+    resize: none;
 }
 
 .container {

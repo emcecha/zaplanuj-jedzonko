@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function functionName() {
     var appNavItems = document.querySelectorAll(".app-nav__item");
     var appHeaderUserName = document.getElementById("userName");
     var appWelcomeBox = document.querySelector(".app-welcome");
+    var userMainView = document.querySelector(".app-dashboard");
 
     function getUserFromLocalStorage() {
 
@@ -53,11 +54,15 @@ document.addEventListener("DOMContentLoaded", function functionName() {
 
         if (user === null) {
 
+            userMainView.style.display = "none";
+
             for (var i = 1; i < appNavItems.length; i++) {
                 appNavItems[i].style.display = "none";
             }
 
         } else {
+
+            userMainView.style.display = "block";
 
             for (var i = 1; i < appNavItems.length; i++) {
                 appNavItems[i].style.display = "block";
@@ -73,8 +78,19 @@ document.addEventListener("DOMContentLoaded", function functionName() {
 
     getUserFromLocalStorage();
     // localStorage.clear();
+    // ----------------------------------------------
+    // --------- DODANIE NOWEGO PRZEPISU ------------
 
+    var addRecipeButton = document.getElementById("add-recipe");
+    var addRecipeView = document.querySelector(".app-add-recipe");
 
+    function openRecipeCreator() {
+
+        userMainView.style.display = "none";
+        addRecipeView.style.display = "block";
+    }
+
+    addRecipeButton.addEventListener("click", openRecipeCreator)
 
 
 
