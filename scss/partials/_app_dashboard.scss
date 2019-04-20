@@ -1,10 +1,12 @@
 .app-dashboard {
+    height: 100%;
 
     &__menu {
         display: flex;
         justify-content: space-between;
         height: 150px;
         overflow: hidden;
+        margin-bottom: 20px;
     }
 
     &__button {
@@ -43,6 +45,7 @@
         background-color: $screen-bcg-color;
         border: 1px dashed transparent;
         font-size: $m-font-size;
+        font-weight: bold;
         position: relative;
         padding: 5px;
         padding-right: 20px;
@@ -71,4 +74,39 @@
         margin-right: 15px;
     }
 
+    &__table-box {
+        width: 100%;
+        background-color: $screen-bcg-color;
+        border: 1px dashed $app-dotted-brd-color;
+        padding: 5px 30px;
+        height: calc(100% - 150px - 20px);
+    }
+
+    &__header {
+        font-size: $m-font-size;
+        color: $accent-color;
+        text-align: center;
+        border-bottom: 1px solid $app-dotted-brd-color;
+        padding-bottom: 5px;
+    }
+
+    .table {
+        height: calc(100% - 60px);
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        color: $aside-bcg-color;
+        font-size: $s-font-size;
+        cursor: pointer;
+    }
+
+    &__nav-button {
+        transition: all 200ms;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
 }

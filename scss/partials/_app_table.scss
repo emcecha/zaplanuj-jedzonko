@@ -1,0 +1,37 @@
+.table {
+    width: 100%;
+
+    &__header {
+        width: 100%;
+        font-size: $m-font-size;
+        font-weight: 700;
+        display: flex;
+        color: $aside-bcg-color;
+        border-bottom: 1px solid $app-dotted-brd-color;
+        padding-right: 22px;
+    }
+
+    &__header-cell {
+        width: calc(100% / 7);
+        overflow: hidden;
+        padding: 5px;
+    }
+
+    &__body {
+        width: 100%;
+        font-size: $s-font-size;
+        color: $tbl-txt-color;
+        overflow-y: scroll;
+        max-height: calc(100% - 60px);
+    }
+
+    &__row {
+        display: flex;
+        border-bottom: 1px solid $app-dotted-brd-color;
+    }
+
+    &__cell {
+        width: calc(100% / 7);
+        padding: 5px;
+    }
+}

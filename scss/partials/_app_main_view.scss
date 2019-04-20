@@ -92,5 +92,8 @@
 .app-main {
     background-image: url("../img/app_background.png");
     width: calc(100% - 235px);
+    height: 100%;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
