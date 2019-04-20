@@ -30,3 +30,40 @@
         left: 0;
     }
 }
+
+.button-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 3px;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    font-size: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms;
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--succes {
+        background-color: $msg-sucs-color;
+    }
+
+    &--warning {
+        background-color: $msg-warn-color;
+    }
+
+    &--info {
+        background-color: $msg-info-color;
+    }
+
+    &:hover {
+        background-color: $accent-color;
+    }
+}
