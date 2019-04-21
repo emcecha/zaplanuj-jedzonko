@@ -67,3 +67,25 @@
         background-color: $accent-color;
     }
 }
+
+.button-delete,
+.button-edit {
+    color: $aside-bcg-color;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.button-edit {
+
+    &:hover {
+        color: $msg-warn-color;
+    }
+}
+
+.button-delete {
+
+    &:hover {
+        color: red;
+    }
+}

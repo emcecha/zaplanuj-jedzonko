@@ -74,13 +74,16 @@
     }
 
     &__input-details {
-        width: 90%;
+        flex-grow: 1;
         font-size: $xs-font-size;
         padding: 3px;
+        margin-right: 5px;
     }
 
     &__button {
         font-size: 0;
+        background-color: transparent;
+        border: none;
         color: $msg-sucs-color;
         transition: all 200ms;
         cursor: pointer;

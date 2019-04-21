@@ -62,8 +62,6 @@ document.addEventListener("DOMContentLoaded", function functionName() {
 
         } else {
 
-            userMainView.style.display = "block";
-
             for (var i = 1; i < appNavItems.length; i++) {
                 appNavItems[i].style.display = "block";
             }
@@ -72,6 +70,10 @@ document.addEventListener("DOMContentLoaded", function functionName() {
 
             if (appWelcomeBox) {
                 appWelcomeBox.style.display = "none";
+            }
+
+            if (userMainView) {
+                userMainView.style.display = "block";
             }
         }
     }
@@ -90,7 +92,76 @@ document.addEventListener("DOMContentLoaded", function functionName() {
         addRecipeView.style.display = "block";
     }
 
-    addRecipeButton.addEventListener("click", openRecipeCreator)
+    if (addRecipeButton) {
+        addRecipeButton.addEventListener("click", openRecipeCreator);
+    }
+
+    var addInstructionForm = document.querySelector(".app-add-recipe__col-form--instructions");
+
+    function addInstruction(event) {
+
+        if (this.firstElementChild.value) {
+
+            event.preventDefault();
+
+            var value = this.firstElementChild.value;
+            this.firstElementChild.value = "";
+            var list = document.querySelector(".app-add-recipe__list--instructions");
+
+            addListItem(list, value);
+        }
+    }
+
+    if (addInstructionForm) {
+        addInstructionForm.addEventListener("submit", addInstruction);
+    }
+
+    var addIngridientForm = document.querySelector(".app-add-recipe__col-form--ingridients");
+
+    function addIngridient(event) {
+
+        if (this.firstElementChild.value) {
+
+            event.preventDefault();
+
+            var value = this.firstElementChild.value;
+            this.firstElementChild.value = "";
+            var list = document.querySelector(".app-add-recipe__list--ingridients");
+
+            addListItem(list, value);
+        }
+    }
+
+    if (addIngridientForm) {
+        addIngridientForm.addEventListener("submit", addIngridient);
+    }
+
+    function addListItem(list, value) {
+
+        var item = document.createElement("li");
+
+        var itemText = document.createElement("span");
+        itemText.innerText = value;
+
+        var editBtn = document.createElement("span");
+        editBtn.className = "button-edit"
+        var iconEdit = document.createElement("i");
+        iconEdit.className = "fas fa-edit";
+        editBtn.appendChild(iconEdit);
+
+        var deleteBtn = document.createElement("span");
+        deleteBtn.className = "button-delete";
+        var iconDelete = document.createElement("i");
+        iconDelete.className = "fas fa-trash-alt";
+        deleteBtn.appendChild(iconDelete);
+
+        item.appendChild(itemText);
+        item.appendChild(editBtn);
+        item.appendChild(deleteBtn);
+
+        list.appendChild(item);
+    }
+
 
 
 

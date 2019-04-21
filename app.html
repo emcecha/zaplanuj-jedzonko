@@ -298,47 +298,32 @@
                         <h3 class="app-add-recipe__col-title">
                             INSTRUKCJE
                         </h3>
-                        <div class="app-add-recipe__col-form">
-                            <textarea name="instructions" rows="3" class="app-add-recipe__input-details"></textarea>
-                            <div class="app-add-recipe__button">
+                        <form class="app-add-recipe__col-form app-add-recipe__col-form--instructions">
+                            <textarea name="instructions" rows="3" class="app-add-recipe__input-details" required></textarea>
+                            <button type="submit" name="instructions" class="app-add-recipe__button app-add-recipe__button--instruction">
                                 <i class="fas fa-plus-square"></i>
-                            </div>
-                        </div>
+                            </button>
+                        </form>
                     </div>
                     <div class="app-add-recipe__col">
                         <h3 class="app-add-recipe__col-title">
                             SKŁADNIKI
                         </h3>
-                        <div class="app-add-recipe__col-form">
-                            <input type="text" name="ingridients" class="app-add-recipe__input-details">
-                            <div class="app-add-recipe__button">
+                        <form class="app-add-recipe__col-form app-add-recipe__col-form--ingridients">
+                            <input type="text" name="ingridients" class="app-add-recipe__input-details" required>
+                            <button type="submit" name="ingridients" class="app-add-recipe__button app-add-recipe__button--ingridient">
                                 <i class="fas fa-plus-square"></i>
-                            </div>
-                        </div>
+                            </button>
+                        </form>
                     </div>
                     <div class="app-add-recipe__list-box">
                         <ol class="app-add-recipe__list app-add-recipe__list--instructions">
-                            <li>tralala
-                                <i class="fas fa-edit"></i>
-                                <i class="far fa-trash-alt"></i>
-                            </li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
-                            <li>tralala</li>
+
                         </ol>
                     </div>
                     <div class="app-add-recipe__list-box">
                         <ul class="app-add-recipe__list app-add-recipe__list--ingridients">
-                            <li>a</li>
+
                         </ul>
                     </div>
                 </div>
