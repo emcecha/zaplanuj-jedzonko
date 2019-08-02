@@ -1,5 +1,5 @@
 # Zaplanuj Jedzonko
-Application to store recipes and daily /wekly menus.
+Application to store recipes and daily /weekly menus.
 Project contains:
 * landing page for application - desktop version
 * application page - desktop version
